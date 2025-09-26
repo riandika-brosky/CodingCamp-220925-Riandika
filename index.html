@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Usaha apa aja</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Our Profile</a></li>
+        </ul>
+        <button id="toggleDark">🌙</button>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <h1 id="typing"></h1>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h2>About the Company</h2>
+        <p>
+       MyCompany is a project built as part of a web development bootcamp assignment. This website is designed to showcase a fictional company profile with a modern and interactive appearance. Through this project, we learned how to implement HTML, CSS, and JavaScript to create a website that is not only functional but also user-friendly.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Vision & Mission</h2>
+        <p>
+         To become a technology company that delivers innovative, creative, and impactful digital solutions for society.
+        </p>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="counter" data-target="1000">0</div>
+      <p>Clients</p>
+      <div class="counter" data-target="10">0</div>
+      <p>Years Experience</p>
+    </section>
+
+    <section class="welcome">
+      <h2 id="welcomeMessage">Hi, Guest!</h2>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button onclick="setWelcomeMessage()">Submit</button>
+    </section>
+
+   <section class="contact">
+  <h2>Message Us</h2>
+  <form id="messageForm">
+    <div class="form-group">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label>Gender:</label>
+      <label><input type="radio" name="gender" value="Male" required> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Write a message..." required></textarea>
+    </div>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <div id="formResult" class="result-box"></div>
+</section>
+
+
+    <footer>
+      <p>&copy; 2025 Usaha apa aja seriusan bang buat tangan sendiri ini..
+        biar keren dikit pake copyright xixixi. All rights reserved
+      </p>
+    </footer>
+
+
+    <button id="backToTop">⬆</button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
